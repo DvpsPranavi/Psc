@@ -1,0 +1,50 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> git add .
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> cd set01
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set01>  gcc -g -O0 problem03.c -o problem03.exe
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set01> gdb .\problem03.exe    
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set01\problem03.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem03.c, line 9.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set01/.\problem03.exe 
+[New Thread 24520.0x3550]
+[New Thread 24520.0x17a0]
+
+Breakpoint 1, main () at problem03.c:9
+9          int a,b,sum=0;
+(gdb) n
+10         a=input();
+(gdb) n
+Enter the number
+3
+11         b=input();
+(gdb) n
+Enter the number
+5
+12         sum=add( a, b);
+(gdb) n
+13         output( a,b,sum);
+(gdb) n
+The sum of 3 and 5 is 8 14         return 0;
+(gdb) n
+15      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 24520] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
