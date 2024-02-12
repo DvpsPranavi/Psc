@@ -1,0 +1,56 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> git add .
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> cd set01
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set01>  gcc -g -O0 problem08.c -o problem08.exe
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set01> gdb .\problem08.exe
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set01\problem08.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401477: file problem08.c, line 8.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set01/.\problem08.exe 
+[New Thread 48204.0x536c]
+[New Thread 48204.0x91c0]
+
+Breakpoint 1, 0x00401477 in main () at problem08.c:8
+8       {
+(gdb) n
+10          n=input_array_size();
+(gdb) n
+Enter the number of numbers
+3
+11          int a[n];
+(gdb) n
+12          input_array(n,a);
+(gdb) n
+Enter the numbers to be added
+3
+Enter the numbers to be added
+4
+Enter the numbers to be added
+5
+13          sum= sum_n_array(n,a);
+(gdb) n
+14          output(n,a,sum);
+(gdb) n
+The sum  of all 3 elements is: 12.
+15          return 0;
+(gdb) n
+16      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 48204] will be killed.
+
+Quit anyway? (y or n) y

@@ -1,0 +1,2 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set01>  gcc -g -O0 problem08.c -o problem08.exe
+>> 
