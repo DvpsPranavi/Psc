@@ -1,0 +1,52 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> git add .
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> cd set01
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set01>  gcc -g -O0 problem05.c -o problem05.exe
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set01> gdb .\problem05.exe
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set01\problem05.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem05.c, line 10.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set01/.\problem05.exe 
+[New Thread 16144.0x462c]
+[New Thread 16144.0x6b54]
+
+Breakpoint 1, main () at problem05.c:10
+10          a=input();
+(gdb) n
+Enter the number
+4
+11          b=input();
+(gdb) 5
+Undefined command: "5".  Try "help".
+(gdb) n
+Enter the number
+5
+12          c=input();
+(gdb) n
+Enter the number
+5
+13          largest=compare(a,b,c);
+(gdb) n
+14          output(a,b,c,largest);
+(gdb) n
+The largest number between 4,5 and 5 is 5
+15          return 0;
+(gdb) n
+16      }
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 16144] will be killed.
+
+Quit anyway? (y or n) y
