@@ -1,0 +1,41 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> git add .
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> cd set01
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set01>  gcc -g -O0 problem07.c -o problem07.exe
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set01> gdb .\problem07.exe
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set01\problem07.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem07.c, line 9.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set01/.\problem07.exe
+[New Thread 22672.0xa968]
+[New Thread 22672.0x814c]
+
+Breakpoint 1, main () at problem07.c:9
+9           int n,sum=0;
+(gdb) n
+10          n=input_n();
+(gdb) n
+Enter the number of natural numbers to be added6
+11          sum=sum_n_nos(n);
+(gdb) n
+12          output(n,sum);
+(gdb) n
+The sum of the first 6 natural numbers is 21
+13          return 0;
+(gdb) n
+14      }
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 22672] will be killed.
