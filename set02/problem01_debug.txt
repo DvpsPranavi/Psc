@@ -1,0 +1,45 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> git add .
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> cd set02
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02>  gcc -g -O0 problem01.c -o problem01.exe
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02> gdb .\problem01.exe    
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set02\problem01.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401505: file problem01.c, line 24.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set02/.\problem01.exe
+[New Thread 17644.0x48c8]
+[New Thread 17644.0x3a78]
+
+Breakpoint 1, main () at problem01.c:24
+24          input(&base,&height);
+(gdb) n
+Enter the base of the triangle
+3
+Enter the height of the triangle
+4
+25          find_area(base,height,&area);
+(gdb) n
+26          output(base,height,area);
+(gdb) n
+The area of the triangle with base 3.000000 ,height 4.000000 is 6.000000
+27          return 0;
+(gdb) n
+28      }(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 17644] will be killed.
+
+Quit anyway? (y or n) y
