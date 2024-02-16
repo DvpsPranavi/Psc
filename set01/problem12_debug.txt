@@ -1,0 +1,57 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> git add .
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> cd set01
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set01>  gcc -g -O0 problem12.c -o problem12.exe
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set01> gdb .\problem12.exe    
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set01\problem12.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401477: file problem12.c, line 18.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set01/.\problem12.exe 
+[New Thread 45060.0x9004]
+[New Thread 45060.0x7c68]
+
+Breakpoint 1, 0x00401477 in main () at problem12.c:18
+18      {
+(gdb) n
+20          n=get_n();
+(gdb) n
+Enter the number of complex numbers to be added
+2
+21          Complex complex_numbers[n];
+(gdb) n
+22          input_n_complex(n, complex_numbers);
+(gdb) n
+Enter complex number 1:
+Enter the real part: 5
+Enter the imaginary part: 6
+Enter complex number 2:
+Enter the real part: 3
+Enter the imaginary part: 4
+23          Complex value = add_n_complex(n, complex_numbers);
+(gdb) n
+24          output(n, complex_numbers, value);
+(gdb) n
+Complex numbers entered:
+1: 5.00 + 6.00i
+2: 3.00 + 4.00i
+Sum of the 2 complex numbers: 8.00 + 10.00i
+25          return 0;
+(gdb) n
+26      }
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 45060] will be killed.
+
+Quit anyway? (y or n) y

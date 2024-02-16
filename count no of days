@@ -1,0 +1,264 @@
+[33mcommit 43f4754cd65c1857ea9605a047e34b323576c721[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: DvpsPranavi <dvpspranavi.bsc23@rvu.edu.in>
+Date:   Mon Feb 12 15:19:10 2024 +0530
+
+    debug12
+
+[33mcommit 1f5b5f0d886975c6e5d39a13acaddb1f16ad1bba[m
+Author: DvpsPranavi <dvpspranavi.bsc23@rvu.edu.in>
+Date:   Mon Feb 12 15:10:01 2024 +0530
+
+    debug11
+
+[33mcommit 80b5dcc1fb76c48b1d46ee87c8e45a898938839d[m
+Author: DvpsPranavi <dvpspranavi.bsc23@rvu.edu.in>
+Date:   Mon Feb 12 14:35:04 2024 +0530
+
+    debug09
+
+[33mcommit 8eabf9f8f474f70f030028ac63f72d3d56aa4d0e[m
+Author: DvpsPranavi <dvpspranavi.bsc23@rvu.edu.in>
+Date:   Mon Feb 12 14:26:04 2024 +0530
+
+    debug08
+
+[33mcommit c7cbb6c5a2b777a7ac5040038f3c37d2b4ad85c3[m
+Author: DvpsPranavi <dvpspranavi.bsc23@rvu.edu.in>
+Date:   Mon Feb 12 14:05:48 2024 +0530
+
+    debug07
+
+[33mcommit 4c90b3377b29ae1179e4be2939371546afabaaad[m
+Author: DvpsPranavi <dvpspranavi.bsc23@rvu.edu.in>
+Date:   Fri Feb 9 14:43:02 2024 +0530
+
+    debug04
+
+[33mcommit 0d0bbe7d644023f14d65ee5d8dec5d33b14b7e64[m
+Author: DvpsPranavi <dvpspranavi.bsc23@rvu.edu.in>
+Date:   Fri Feb 9 14:30:37 2024 +0530
+
+    debug03
+
+[33mcommit 7b8bcc041217d8de3506fd406538b61327d05810[m
+Author: DvpsPranavi <dvpspranavi.bsc23@rvu.edu.in>
+Date:   Tue Feb 6 15:21:22 2024 +0530
+
+    debug02
+
+[33mcommit ea08e856f64c4f963883fdd6c251248bde6c2f42[m
+Author: DvpsPranavi <dvpspranavi.bsc23@rvu.edu.in>
+Date:   Tue Feb 6 14:46:44 2024 +0530
+
+    debug01
+
+[33mcommit 2bb9116710b6ddc8d95d5957284848a56566298f[m
+Author: srinirad <srinirad@users.noreply.github.com>
+Date:   Mon Jan 1 07:43:56 2024 +0530
+
+    Update README.md
+
+[33mcommit 69aaf01e0d01b80d961cb8f250975434f0d0a19e[m
+Author: srinirad <srinirad@users.noreply.github.com>
+Date:   Mon Jan 1 07:39:08 2024 +0530
+
+    Update README.md
+
+[33mcommit f834a495ff9712399e107dea15eab6a6318f7fbe[m
+Author: srinirad <srinirad@users.noreply.github.com>
+Date:   Wed Sep 20 17:25:46 2023 +0530
+
+    Update README.md
+    
+    updated the signatures.
+
+[33mcommit 728754a65f7ccbebfed5e69552f22544dc8bcbaa[m
+Author: srinirad <srinirad@users.noreply.github.com>
+Date:   Mon Feb 6 18:17:24 2023 +0530
+
+    Update README.md
+
+[33mcommit 8f573dd43c625de3da8fd757ef7c266ea3c3b065[m
+Author: srinirad <srinirad@users.noreply.github.com>
+Date:   Mon Jan 30 03:33:38 2023 +0530
+
+    Delete problem05.s
+
+[33mcommit 26b41fc978afbdc2f0e2f4183b3eb6faa4e3cf3d[m
+Author: srinirad <srinirad@users.noreply.github.com>
+Date:   Mon Jan 30 03:33:08 2023 +0530
+
+    Delete problem05.i
+
+[33mcommit eaf6adc5d0947ba5de1d4f6016db210c937228e6[m
+Author: srinirad <srinirad@users.noreply.github.com>
+Date:   Mon Jan 30 03:32:45 2023 +0530
+
+    Update problem05.c
+
+[33mcommit 98000952e196a968de1eeb32980e1a99fa8c791a[m
+Author: srinirad <srinirad@users.noreply.github.com>
+Date:   Mon Jan 30 03:31:54 2023 +0530
+
+    Update problem02.c
+
+[33mcommit 7f2414d3ef767f9f879ff40dd486ef266a081b99[m
+Author: srinirad <srinirad@users.noreply.github.com>
+Date:   Mon Jan 30 03:31:18 2023 +0530
+
+    Update problem01.c
+
+[33mcommit fa7b45fdd3cd2d4865519619ca4d4da24661d2b4[m
+Author: srinirad <srinirad@users.noreply.github.com>
+Date:   Fri Dec 30 01:49:49 2022 +0530
+
+    Update README.md
+    
+    Fixed set no
+
+[33mcommit 82b4377d6643fe0d34424ef6c99d7287f630f727[m
+Author: srinirad <srinirad@users.noreply.github.com>
+Date:   Fri Dec 30 01:48:38 2022 +0530
+
+    Update README.md
+    
+    Fixed polygon problem
+
+[33mcommit f10ba92f59bf1a96292d1b203c1345bc9fc383ac[m
+Author: Srinivasan  Lakshminarayanan <srinirad@users.noreply.github.com>
+Date:   Wed Dec 21 12:25:17 2022 +0000
+
+    something
+
+[33mcommit 2732ad8995901f23eee95ff7b30ae6143adbb163[m
+Author: Srinivasan  Lakshminarayanan <srinirad@users.noreply.github.com>
+Date:   Mon Sep 19 19:26:44 2022 +0000
+
+    Renamed sets
+
+[33mcommit 2f437e8b215b9f8ef268b95cf2e90ee25afcb2b5[m
+Author: Srinivasan  Lakshminarayanan <srinirad@users.noreply.github.com>
+Date:   Mon Sep 19 19:22:58 2022 +0000
+
+    Renamed Sets
+
+[33mcommit 1c0c8a0a68e29a94272b76a3907fc0db2cf0875f[m
+Author: imryanide <rayanrafisheikh@gmail.com>
+Date:   Wed Sep 7 13:39:24 2022 +0530
+
+    change .py to .c
+
+[33mcommit 60a030ee36e93891f2908768bdfc1d2daba0407c[m
+Author: imryanide <rayanrafisheikh@gmail.com>
+Date:   Wed Sep 7 13:39:13 2022 +0530
+
+    change .py to .c
+
+[33mcommit a259155997e87a7aa648158b6cfd656a03dbea0f[m
+Author: Shreyas <shreyass.ranganatha@gmail.com>
+Date:   Fri Aug 26 11:55:38 2022 +0530
+
+    Fix set01/README.md
+
+[33mcommit dd876159023da72b6a531f0512e2c499e388f8a1[m
+Author: Shreyas <shreyass.ranganatha@gmail.com>
+Date:   Fri Aug 26 11:54:15 2022 +0530
+
+    Fix set03/README.md
+
+[33mcommit d5cb618261629c9c84b207e12624981b16e86385[m
+Author: Shreyas <shreyass.ranganatha@gmail.com>
+Date:   Fri Aug 26 11:52:27 2022 +0530
+
+    Fix set04/README.md
+
+[33mcommit 4d2ea357daf791056d504e49073151405d33e53c[m
+Author: Shreyas <shreyass.ranganatha@gmail.com>
+Date:   Fri Aug 26 11:51:26 2022 +0530
+
+    Fix READMEs
+
+[33mcommit cc79157b328282877a402969f1077426a621db2a[m
+Author: Shreyas <shreyass.ranganatha@gmail.com>
+Date:   Fri Aug 26 11:21:34 2022 +0530
+
+    Add Files
+
+[33mcommit 6ce5923b5d01944eb8aa4f3634dc5358a445f4c7[m
+Author: Rayan Sheikh <61741354+imryanide@users.noreply.github.com>
+Date:   Thu Aug 25 23:12:31 2022 +0530
+
+    fix func declarations
+
+[33mcommit a3337b8ace1c7f5f210bf47db0ded5c8d56490a0[m
+Merge: 65820e3 7eb1225
+Author: imryanide <rayanrafisheikh@gmail.com>
+Date:   Thu Aug 25 17:30:38 2022 +0530
+
+    Merge branch 'main' of github.com:srinirad/c-activity-sets
+
+[33mcommit 65820e3f168f52383933962a48e56282c9e21d3a[m
+Author: imryanide <rayanrafisheikh@gmail.com>
+Date:   Thu Aug 25 17:30:02 2022 +0530
+
+    Create Set 3 problems and files
+
+[33mcommit 7eb122578607592f69bfba4880059547930293a3[m
+Author: Shreyas <shreyass.ranganatha@gmail.com>
+Date:   Thu Aug 25 17:25:48 2022 +0530
+
+    Edit Set05/README.md
+
+[33mcommit 721d93d2a4d98c59d80aaf63b410c66a18ae8a43[m
+Author: Shreyas <shreyass.ranganatha@gmail.com>
+Date:   Thu Aug 25 17:24:33 2022 +0530
+
+    Add Set04/README.md
+
+[33mcommit 067c10b2edca9e2d3d821229e076e92157aa367a[m
+Author: imryanide <rayanrafisheikh@gmail.com>
+Date:   Thu Aug 25 17:20:12 2022 +0530
+
+    Create Set 2 problems and files
+
+[33mcommit cd03975fae405b098467104ca2faa2d6545a3e8c[m
+Author: imryanide <rayanrafisheikh@gmail.com>
+Date:   Thu Aug 25 17:05:12 2022 +0530
+
+    Fix set 01
+
+[33mcommit 1d2dab06d299a0c78e5fdbe9b889426d60c3e07d[m
+Author: Shreyas <shreyass.ranganatha@gmail.com>
+Date:   Thu Aug 25 16:47:26 2022 +0530
+
+    Add Set05/README.md
+
+[33mcommit 95bf8c229a4d3a1e4d23cc7783873ac2e5ef4fbd[m
+Author: imryanide <rayanrafisheikh@gmail.com>
+Date:   Thu Aug 25 16:22:49 2022 +0530
+
+    fixed files
+
+[33mcommit 81c873371dfc425853f67de75825c3ad4fc5ed4a[m
+Author: imryanide <rayanrafisheikh@gmail.com>
+Date:   Thu Aug 25 16:17:21 2022 +0530
+
+    Add README.mds to all folders
+
+[33mcommit 4f864cef6ab472cf94416d3122c660360aac8dc4[m
+Author: imryanide <rayanrafisheikh@gmail.com>
+Date:   Thu Aug 25 16:15:57 2022 +0530
+
+    Remove obsidian workspace
+
+[33mcommit 20c9514fa3e376556efd3b92012227cd2870dc6e[m
+Author: imryanide <rayanrafisheikh@gmail.com>
+Date:   Thu Aug 25 16:14:02 2022 +0530
+
+    Activity Set 1 Readme and files.
+
+[33mcommit f483b82e896ea2bdf89ad772b0aea256172429f8[m
+Author: srinirad <srinirad@users.noreply.github.com>
+Date:   Thu Aug 25 15:57:06 2022 +0530
+
+    Initial commit
