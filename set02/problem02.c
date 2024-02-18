@@ -1,44 +1,37 @@
 //02.  Write a program to find if a triangle is scalene.
 #include <stdio.h>
-int input_side(int a, int b, int c);
-int check_scalene(int a, int b, int c);
-void output(int a, int b, int c, int isscalene);
-
-int main()
+int input_side()
 {
-    int a, b, c;
-    input_side(&a, &b, &c); 
-    int scalene = check_scalene(a, b, c);
-    output(a, b, c, scalene);
+    int side;
+    printf("Enter the side of triangle\n");
+    scanf("%d",&side);
+    return side;
 }
-
-int input_side(int a, int b, int c)
-{
-    printf("Enter the length of one side: ");
-    scanf("%d", a);
-    printf("Enter the length of the second side: ");
-    scanf("%d", b);
-    printf("Enter the length of the third side: ");
-    scanf("%d", c);
-    return 0;
-}
-
 int check_scalene(int a, int b, int c)
 {
-    int scalene = 0;
-    if (a == b || a == c || b == c)
+     if (a != b && b != c && a != c) 
     {
-        printf("The sides are equal, and therefore, it's not a scalene triangle\n");
-    }
-    else
+        return 1;  
+    } else
     {
-        printf("The sides are not equal, and therefore, it's a scalene triangle\n");
-        scalene = 1;
+        return 0;  
     }
-    return scalene;
 }
-
 void output(int a, int b, int c, int isscalene)
 {
-    printf("The sides of the triangle are %d, %d, and %d, and the triangle is %s scalene.\n",");
+    if (isscalene) {
+        printf("The triangle is scalene.\n");
+    } else {
+        printf("The triangle is not scalene.\n");
+    }
+}
+int main()
+{
+    int side1, side2, side3;
+    side1=input_side();
+    side2=input_side();
+    side3=input_side();
+    int isscalene=check_scalene(side1,side2,side3);
+    output(side1,side2,side3,isscalene);
+    return 0;
 }
