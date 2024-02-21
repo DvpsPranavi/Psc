@@ -3,7 +3,8 @@ void input_string(char *a);
 void str_reverse(char *str, char *rev_str);
 void output(char *a, char *reverse_a);
 
-int main() {
+int main() 
+{
     char input[100];  
     char reversed[100];
 
@@ -22,8 +23,9 @@ void input_string(char *a)
 }
 
 // Function to reverse a string
-void str_reverse(char *str, char *rev_str) {
-    int length = 0;
+void str_reverse(char *str, char *rev_str)
+{
+    int length;
     while (str[length] != '\0') 
     {
         length++;
@@ -37,7 +39,8 @@ void str_reverse(char *str, char *rev_str) {
     rev_str[j] = '\0';
 }
 
-void output(char *a, char *reverse_a) {
+void output(char *a, char *reverse_a) 
+{
     printf("Original String is %s\n", a);
     printf("Reversed String is %s\n", reverse_a);
 }
