@@ -72,7 +72,7 @@ int main()
 	int n = input_n();
 	if (n <= 0)
     {
-		printf("Invalid input. Number of triangles must be a positive integer.\n");
+		printf("Invalid,Number of triangles must be a positive integer.\n");
 		return 1;
 	}
 
