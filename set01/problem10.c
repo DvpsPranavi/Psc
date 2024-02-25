@@ -1,64 +1,45 @@
-// Write a C program to compare two strings, character by character.
-#include <stdio.h>
-void input_two_strings(char *string1, char *string2);
-int stringcompare(char *string1, char *string2);
-void output(char *string1, char *string2, int result);
-
-int main()
-{
-    char string1[50], string2[50];
-    input_two_strings(string1, string2);
-    int result = stringcompare(string1, string2);
-    output(string1, string2, result);
-    return 0;    
+// 10. Write a C program to compare two strings, character by character.
+#include<stdio.h>
+void input(char *a,char *b)
+{   printf("enter string 1 : ");
+    scanf("%s",a);
+      printf("enter string 2 : ");
+    scanf("%s",b);
 }
-
-void input_two_strings(char *string1, char *string2)
-{
-    printf("Enter the string : \n");
-    scanf("%s",string1);
-    printf("Enter the string : \n");
-    scanf("%s",string2);
-
-}
-
-int stringcompare(char *string1, char *string2)
-{
-    
-    for(int i=0;string1[i]!='\0' && string2!='\0';i++)
+int compute(char *a,char *b) 
+{   int i=0;
+    while(a[i]!='\0'|| b[i]!='\0')  
     {
         
-        if(string1[i]<string2[i])
-        {
-            return 0;
-           
-        }
-        if(string1[i]>string2[i])
-        {
-            return 1;
-            
-        }
-        else 
-        {
-            return 2;
-            
-        }
-    }  
-}
+            if(a[i]!=b[i])  
+               {
+                    return a[i]-b[i]; 
+               }
 
-void output(char *string1, char *string2, int result)
+          i++;
+        }
+        return 0;
+    }
+
+void output(char *a,char *b,int c)
 {
-    if(result==0)
+    if(c==0)
     {
-        printf("%s is greater\n",string1);
+        printf("both are equal");
     }
-    if(result==1)
+    else if(c>0)
     {
-        printf("%s is greater\n",string2);
+        printf("%s is greater than %s \n",a,b);
     }
-    if(result==2)
-    {
-        printf("Both strings are same\n");
+    else{
+         printf("%s is greater than %s \n ",b,a);
     }
-    
+}
+int main()
+{
+    char a[30],b[30],c;
+    input(a,b);
+    c=compute(a,b);
+    output(a,b,c);
+    return 0;
 }
