@@ -1,9 +1,9 @@
 // 10. Write a C program to compare two strings, character by character.
 #include<stdio.h>
 void input(char *a,char *b)
-{   printf("enter string 1 : ");
+{   printf("enter string 1 : \n");
     scanf("%s",a);
-      printf("enter string 2 : ");
+    printf("enter string 2 : \n");
     scanf("%s",b);
 }
 int compute(char *a,char *b) 
