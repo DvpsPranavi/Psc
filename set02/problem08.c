@@ -64,7 +64,7 @@ void output(int n, Triangle t[n], Triangle smallest)
 		printf("Triangle %d - Base: %.2f, Altitude: %.2f, Area: %.2f\n", i + 1, t[i].base, t[i].altitude, t[i].area);
 	}
 	printf("Triangle with the smallest area:\n");
-	printf("Base: %.2f, Altitude: %.2f, Area: %.2f\n", smallest.base, smallest.altitude, smallest.area);
+	printf("The smallest triangle out of triangles with base %.2f and height %.2f and area %.2f \n", smallest.base, smallest.altitude, smallest.area);
 }
 
 int main()

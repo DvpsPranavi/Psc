@@ -7,37 +7,43 @@ void input(char *a,char *b)
     scanf("%s",b);
 }
 int compute(char *a,char *b) 
-{   int i=0;
-    while(a[i]!='\0'|| b[i]!='\0')  
+{ 
+    int i=0;
+    for(i=0;a[i]==b[i] && a[i]!='\0' && b[i]!= '\0';i++);
+    if (a[i]>b[i])
     {
-        
-            if(a[i]!=b[i])  
-               {
-                    return a[i]-b[i]; 
-               }
+        return 1;
+    }
 
-          i++;
-        }
+    else  if (a[i]<b[i])
+    {
+        return 2;
+    }
+    else
+    {
         return 0;
     }
+}
 
-void output(char *a,char *b,int c)
+void output(char *a, char *b, int c)
 {
-    if(c==0)
+    if (c == 0) 
     {
-        printf("both are equal");
-    }
-    else if(c>0)
+        printf("The strings %s and %s are equal.\n", a, b);
+    } 
+    else if (c == 1)
     {
-        printf("%s is greater than %s \n",a,b);
-    }
-    else{
-         printf("%s is greater than %s \n ",b,a);
+        printf("%s is greater than  %s \n", a, b);
+    } 
+    else if (c == 2) 
+    {
+        printf("%s is less than %s \n", a, b);
     }
 }
 int main()
 {
-    char a[30],b[30],c;
+    int c;
+    char a[100],b[100];
     input(a,b);
     c=compute(a,b);
     output(a,b,c);
