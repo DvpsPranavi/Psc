@@ -1,3 +1,4 @@
+//08. Write a program to find the triangle with smallest area in n given triangles.
 #include <stdio.h>
 
 typedef struct _triangle 
@@ -63,7 +64,6 @@ void output(int n, Triangle t[n], Triangle smallest)
     {
 		printf("Triangle %d - Base: %.2f, Altitude: %.2f, Area: %.2f\n", i + 1, t[i].base, t[i].altitude, t[i].area);
 	}
-	printf("Triangle with the smallest area:\n");
 	printf("The smallest triangle out of triangles is the triangle having base %.2f height %.2f and area %.2f \n", smallest.base, smallest.altitude, smallest.area);
 }
 
@@ -74,6 +74,7 @@ int main()
     {
         printf("Invalid input. Number of triangles should be a positive integer.\n");
         return 1;
+    }
 
     Triangle triangles[n];
     input_n_triangles(n, triangles);
@@ -83,6 +84,7 @@ int main()
     output(n, triangles, smallest);
 
     return 0;
-    }
+
 }
+
 
