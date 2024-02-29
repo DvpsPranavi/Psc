@@ -74,5 +74,5 @@ void output(int n, Complex c[n], Complex value )
     {
         printf("%d: %.2f + %.2fi\n", i + 1, c[i].real, c[i].imaginary);
     }
-    printf("Sum of the %d complex numbers: %.2f + %.2fi\n", n, value.real, value.imaginary);
+    printf("Sum of the %d complex numbers: %.f + %.fi\n", n, value.real, value.imaginary);
 }
