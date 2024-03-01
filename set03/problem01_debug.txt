@@ -1,0 +1,48 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> git add .
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> cd set03
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set03>  gcc -g -O0 problem01.c -o problem01.exe
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set03> gdb .\problem01.exe 
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set03\problem01.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem01.c, line 30.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set03/.\problem01.exe
+[New Thread 12840.0x1fccc]
+[New Thread 12840.0x16f98]
+
+Breakpoint 1, main () at problem01.c:30
+30          input(&x1, &y1, &x2, &y2);
+(gdb) n
+Enter the coordinates of point 1 (x1 y1): 4 6 
+Enter the coordinates of point 2 (x2 y2): 6 7 
+32          float distance = find_distance(x1, y1, x2, y2);
+(gdb) n
+34          output(x1, y1, x2, y2, distance);
+(gdb)
+The distance between point (4, 6) and (6, 7) is 2
+36          return 0;
+(gdb) n
+37      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128a in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 12840] will be killed.
+
+Quit anyway? (y or n) y

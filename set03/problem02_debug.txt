@@ -1,0 +1,45 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> git add .
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> cd set03
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set03>  gcc -g -O0 problem02.c -o problem02.exe
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set03> gdb .\problem02.exe
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set03\problem02.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem02.c, line 29.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set03/.\problem02.exe
+[New Thread 141520.0x21b54]
+[New Thread 141520.0x230a8]
+
+Breakpoint 1, main () at problem02.c:29
+29          input_triangle(&x1, &y1, &x2, &y2, &x3, &y3);
+(gdb) n
+Enter the coordinates of the first point (x1 y1): 2 3 
+Enter the coordinates of the second point (x2 y2): 4 5
+Enter the coordinates of the third point (x3 y3): 6 5 
+30          result = is_triangle(x1, y1, x2, y2, x3, y3);
+(gdb) n
+31          output(x1, y1, x2, y2, x3, y3, result);
+(gdb) n
+The points (2.0, 3.0), (4.0, 5.0), and (6.0, 5.0) form a triangle
+33          return 0;
+(gdb) n
+34      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 141520] will be killed.
+
+Quit anyway? (y or n) y
