@@ -1,0 +1,67 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> git add .
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> cd set02
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02>  gcc -g -O0 problem08.c -o problem08.exe 
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02> gdb .\problem08.exe
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set02\problem08.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x4016df: file problem08.c, line 71.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set02/.\problem08.exe
+[New Thread 143472.0x21dec]
+[New Thread 143472.0x2016c]
+
+Breakpoint 1, 0x004016df in main () at problem08.c:71
+71      {
+(gdb) n
+72          int n = input_n();
+(gdb) n
+Enter the number of triangles: 3
+73          if (n <= 0)
+(gdb) n
+79          Triangle triangles[n];
+(gdb) n
+80          input_n_triangles(n, triangles);
+(gdb) n
+Enter base and height of the triangle:
+3 5 
+Enter base and height of the triangle:
+6 7
+Enter base and height of the triangle:
+5 6 
+81          find_n_areas(n, triangles);
+(gdb) n
+83          Triangle smallest = find_smallest_triangle(n, triangles);
+(gdb) n
+84          output(n, triangles, smallest);
+(gdb) n
+Triangles:
+Triangle 1 - Base: 3.00, Altitude: 5.00, Area: 7.50
+Triangle 2 - Base: 6.00, Altitude: 7.00, Area: 21.00
+Triangle 3 - Base: 5.00, Altitude: 6.00, Area: 15.00
+The smallest triangle out of triangles is the triangle having base 3.00 height 5.00 and area 7.50
+86          return 0;
+(gdb) n
+88      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128a in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 143472] will be killed.
+
+Quit anyway? (y or n) y

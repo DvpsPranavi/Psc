@@ -22,10 +22,9 @@ void input_string(char *a)
     scanf("%s", a);
 }
 
-// Function to reverse a string
 void str_reverse(char *str, char *rev_str)
 {
-    int length;
+    int length=0;
     while (str[length] != '\0') 
     {
         length++;

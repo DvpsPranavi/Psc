@@ -1,0 +1,85 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> git add .
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> cd set02
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02>  gcc -g -O0 problem06.c -o problem06.exe
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02> gdb .\problem06.exe
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set02\problem06.exe...done.
+(gdb) b main 
+Breakpoint 1 at 0x401471: file problem06.c, line 11.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set02/.\problem06.exe
+[New Thread 141896.0x2032c]
+[New Thread 141896.0xab38]
+
+Breakpoint 1, main () at problem06.c:11
+11          input_string(input);
+(gdb) n
+Enter a string: hello
+12          str_reverse(input, reversed);
+(gdb) n
+13          output(input, reversed);
+(gdb) n
+Original String is hello
+Reversed String is olleh
+15          return 0;
+(gdb) n
+16      }
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 141896] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02>  gcc -g -O0 problem06.c -o problem06.exe
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02> gdb .\problem06.exe
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set02\problem06.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401471: file problem06.c, line 11.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set02/.\problem06.exe
+[New Thread 142720.0x1effc]
+[New Thread 142720.0x2312c]
+
+Breakpoint 1, main () at problem06.c:11
+11          input_string(input);
+(gdb) n
+Enter a string: pranavi
+12          str_reverse(input, reversed);
+(gdb) n
+13          output(input, reversed);
+(gdb) n
+Original String is pranavi
+Reversed String is ivanarp
+15          return 0;
+(gdb) n
+16      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 142720] will be killed.
+
+Quit anyway? (y or n) y

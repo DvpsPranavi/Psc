@@ -6,11 +6,11 @@ float square_root(float n);
 void output(float n, float sqrroot);
 
 int main() {
-    float number, sqrRoot;
+    float number, sqrroot;
 
     number = input(); 
-    sqrRoot = square_root(number); 
-    output(number, sqrRoot); 
+    sqrroot = square_root(number); 
+    output(number, sqrroot); 
 
     return 0;
 }
@@ -30,12 +30,12 @@ float square_root(float n) {
     }
 
     float estimate = 1;
-    float prevEstimate=0;
+    float pe=0;
 
    do {
-        prevEstimate = estimate;
+        pe= estimate;
         estimate =0.5*(estimate + n / estimate);
-    }  while (estimate != prevEstimate);
+    }  while (estimate != pe);
 
     return estimate;
 }

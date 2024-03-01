@@ -1,0 +1,52 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> git add .
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> cd set02
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02>  gcc -g -O0 problem02.c -o problem02.exe
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02> gdb .\problem02.exe
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set02\problem02.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x4014ea: file problem02.c, line 32.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set02/.\problem02.exe
+[New Thread 142036.0x1d15c]
+[New Thread 142036.0x206b0]
+
+Breakpoint 1, main () at problem02.c:32
+32          side1=input_side();
+(gdb) n
+Enter the side of triangle
+4
+33          side2=input_side();
+(gdb) n
+Enter the side of triangle
+6
+34          side3=input_side();
+(gdb) n
+Enter the side of triangle
+6
+35          int isscalene=check_scalene(side1,side2,side3);
+(gdb) n
+36          output(side1,side2,side3,isscalene);
+(gdb) n
+The triangle is not scalene.
+37          return 0;
+(gdb) n
+38      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 142036] will be killed.
+
+Quit anyway? (y or n) y

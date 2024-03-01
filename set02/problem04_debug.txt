@@ -1,0 +1,49 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02>  gcc -g -O0 problem04.c -o problem04.exe
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02> gdb .\problem04.exe
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set02\problem04.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x4015b1: file problem04.c, line 44.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set02/.\problem04.exe
+[New Thread 132812.0x2336c]
+[New Thread 132812.0x21b50]
+
+Breakpoint 1, 0x004015b1 in main () at problem04.c:44
+44      int main() {
+(gdb) n
+45          int n = input_array_size();
+(gdb) n
+Enter the size of array: 3
+47          int a[n];
+(gdb) n
+48          input_array(n, a);
+(gdb) n
+Enter the array value at index 0: 2
+Enter the array value at index 1: 3
+Enter the array value at index 2: 4
+50          int result = sum_composite_numbers(n, a);
+(gdb) n
+52          output(result);
+(gdb) n
+The sum of composite numbers is 4
+54          return 0;
+(gdb) n
+55      }(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 132812] will be killed.
+
+Quit anyway? (y or n) y
