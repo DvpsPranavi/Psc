@@ -1,0 +1,45 @@
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> git add .
+PS C:\Users\dvpsp\OneDrive\Documents\Psc> cd set02
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02>  gcc -g -O0 problem06n.c -o problem06n.exe
+>> 
+PS C:\Users\dvpsp\OneDrive\Documents\Psc\set02> gdb .\problem06n.exe
+>> 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\dvpsp\OneDrive\Documents\Psc\set02\problem06n.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem06n.c, line 11.
+(gdb) r
+Starting program: C:\Users\dvpsp\OneDrive\Documents\Psc\set02/.\problem06n.exe
+[New Thread 19348.0x5664]
+[New Thread 19348.0x848]
+
+Breakpoint 1, main () at problem06n.c:11
+11          input_string(a);
+(gdb) n
+Enter a string: hello
+12          str_reverse(a);
+(gdb) n
+13          output(a);
+(gdb) m
+Ambiguous command "m": macro, maintenance, make, mem, monitor, mt.
+(gdb) n
+Reversed String is olleh
+14          return 0;
+(gdb) n
+15      }
+(gdb) nn
+Undefined command: "nn".  Try "help".
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 19348] will be killed.
+
+Quit anyway? (y or n) y
