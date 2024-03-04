@@ -1,13 +1,13 @@
 #include <stdio.h>
 void input_string(char *a);
-void str_reverse(char *str);
+void str_reverse(char *str,char*revs_str);
 void output(char *a, char *reverse_a);
 
 int main() 
 {
-    char a[100],str[100], reverse_a[100];
+    char a[100],str[100],revs_str[100],reverse_a[100];
     input_string(a);
-    str_reverse(str);
+    str_reverse(str,revs_str);
     output(a,reverse_a);
     return 0;
 }
@@ -19,7 +19,7 @@ void input_string(char *a)
     scanf("%s", a);
 }
 
-void str_reverse(char *str)
+void str_reverse(char *str,char *revs_str) 
 {
     int length=0;
     while (str[length] != '\0') 
@@ -30,10 +30,10 @@ void str_reverse(char *str)
     int i, j;
     for (i = length - 1, j = 0; i >= 0; i--, j++) 
     {
-    
+        revs_str[j] = str[i];
     }
+}
     
-
 void output(char *a, char *reverse_a) 
 {
     printf("Original String is %s\n", a);

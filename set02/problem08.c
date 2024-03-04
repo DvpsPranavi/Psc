@@ -60,6 +60,10 @@ Triangle find_smallest_triangle(int n, Triangle t[n])
 void output(int n, Triangle t[n], Triangle smallest)
 {
 	printf("Triangles:\n");
+    if (n <= 0)
+    {
+        printf("Invalid input. Number of triangles should be a positive integer.\n");
+    }
 	for (int i = 0; i < n; i++)
     {
 		printf("Triangle %d - Base: %.2f, Altitude: %.2f, Area: %.2f\n", i + 1, t[i].base, t[i].altitude, t[i].area);
@@ -70,12 +74,6 @@ void output(int n, Triangle t[n], Triangle smallest)
 int main()
 {
     int n = input_n();
-    if (n <= 0)
-    {
-        printf("Invalid input. Number of triangles should be a positive integer.\n");
-        return 1;
-    }
-
     Triangle triangles[n];
     input_n_triangles(n, triangles);
     find_n_areas(n, triangles);
