@@ -5,7 +5,7 @@ void output(char *a, char *reverse_a);
 
 int main() 
 {
-    char a[100],str[100],revs_str[100],reverse_a[100];
+    char a[100],reverse_a[100];
     input_string(a);
     str_reverse(str,revs_str);
     output(a,reverse_a);
@@ -32,6 +32,7 @@ void str_reverse(char *str,char *revs_str)
     {
         revs_str[j] = str[i];
     }
+    revs_str[length] = '\0';
 }
     
 void output(char *a, char *reverse_a) 
